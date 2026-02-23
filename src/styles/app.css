@@ -1,0 +1,55 @@
+:root {
+    --brand: #6f42c1;
+    --brand2: #0d6efd;
+}
+
+body {
+    background: radial-gradient(1200px 600px at 10% -10%, rgba(111, 66, 193, 0.18), transparent 55%),
+        radial-gradient(900px 500px at 90% 0%, rgba(13, 110, 253, 0.14), transparent 55%),
+        linear-gradient(180deg, #ffffff, #f8f9fa);
+    min-height: 100vh;
+}
+
+.navbar {
+    backdrop-filter: blur(8px);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(111, 66, 193, 0.92), rgba(13, 110, 253, 0.92));
+}
+
+.badge-soft {
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    border: 1px solid rgba(13, 110, 253, 0.18);
+}
+
+.card-hover {
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--brand), var(--brand2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.code-pill {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.85rem;
+}
